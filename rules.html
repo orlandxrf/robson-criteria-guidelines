@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reglas de anotación</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+      >
+        <div class="col-md-6 mb-2 mb-md-0">
+          <a
+            href="intro.html"
+            class="d-inline-flex link-body-emphasis text-decoration-none"
+          >
+            <img src="img/late_lab.png" class="me-1" alt="iimas" height="32" />
+            <span class="fs-4">Guías de anotación</span>
+          </a>
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li>
+            <a
+              class="liga text-body-secondary px-2"
+              href="intro.html"
+              aria-current="page"
+            >
+              <span class="material-symbols-outlined">home</span>
+              Introducción</a
+            >
+          </li>
+          <li>
+            <a
+              class="liga text-body-secondary px-2"
+              href="labels.html"
+              title="Conjunto de etiquetas"
+            >
+              <span class="material-symbols-outlined">sell</span>
+              Etiquetas</a
+            >
+          </li>
+          <li>
+            <a
+              class="liga text-body-secondary px-2 active"
+              href="rules.html"
+              title="Reglas establecidas"
+            >
+              <span class="material-symbols-outlined">book_2</span>
+              Reglas</a
+            >
+          </li>
+          <li>
+            <a
+              class="liga text-body-secondary px-2"
+              href="platform.html"
+              title="Uso de la plataforma de etiquetado"
+            >
+              <span class="material-symbols-outlined">computer</span>
+              Plataforma</a
+            >
+          </li>
+          <li>
+            <a class="liga text-body-secondary px-2" href="about.html">
+              <span class="material-symbols-outlined">psychology</span>
+              Acerca de</a
+            >
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="container flex-grow-1 container py-4">
+      <main>
+        <section class="mb-4">
+          <h1>Reglas de anotación</h1>
+          <p class="txt-justify mb-4">
+            En esta sección se detallan las reglas y convenciones a seguir para
+            hacer el marcado textual en las notas médicas. Las reglas se
+            encuentran definidas por la siguiente nomenclatura:
+          </p>
+        </section>
+
+        <section class="mb-4">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link liga active"
+                id="generales-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#generales-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="generales-tab-pane"
+                aria-selected="true"
+              >
+                Generales (G)
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link liga"
+                id="positivas-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#positivas-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="positivas-tab-pane"
+                aria-selected="false"
+              >
+                Positivas (P)
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link liga"
+                id="negativas"
+                data-bs-toggle="tab"
+                data-bs-target="#negativas-pane"
+                type="button"
+                role="tab"
+                aria-controls="negativas-pane"
+                aria-selected="false"
+              >
+                Negativas (N)
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link liga"
+                id="ortograficas-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ortograficas-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="ortograficas-tab-pane"
+                aria-selected="false"
+              >
+                Ortográficas (O)
+              </button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-4">
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="generales-tab-pane"
+              role="tabpanel"
+              aria-labelledby="generales-tab"
+              tabindex="0"
+            >
+              <p class="mb-4">
+                Descripción de las reglas generales a tomar en cuenta por los
+                anotadores en el proceso de anotación.
+              </p>
+              <h2 class="fs-4"><strong>G1.</strong> Alcance de la anotación</h2>
+              <p class="txt-justify mb-4">
+                El proceso de anotación no tiene como propósito anotar todas las
+                palabras incluidas en la nota clínica. El objetivo es encontrar
+                aquellas entidades clínicas que corresponden a las etiquetas
+                definidas.
+              </p>
+              <h2 class="fs-4">
+                <strong>G2.</strong> Anotación basada en documentos individuales
+              </h2>
+              <p class="txt-justify mb-4">
+                Todas las anotaciones de una nota clínica deben realizarse de
+                manera aislada sin tener en cuenta otras notas clínicas.
+              </p>
+              <h2 class="fs-4"><strong>G3.</strong> Menciones dudosas</h2>
+              <p class="txt-justify mb-4">
+                No se deben anotar las menciones sobre las que se tenga duda
+                sobre su pertenencia al conjunto de datos, elección de etiqueta,
+                etc. Estas menciones deben recogerse (ID del documento) para
+                comentarse y discutirlas entre el anotador y los organizadores
+                del corpus.
+              </p>
+              <h2 class="fs-4"><strong>G4.</strong> Exhaustividad</h2>
+              <p class="txt-justify">
+                Deben marcarse todas las apariciones de una entidad clínica,
+                incluso si ya se ha marcado anteriormente en el mismo texto u
+                oración. Por ejemplo menciones textuales (entidades clínicas)
+                descritas en la misma nota en diferentes oraciones. Ejemplo:
+              </p>
+              <div class="alert alert-light mb-4" role="alert">
+                <ul>
+                  <li class="mb-3">
+                    Paciente femenino con
+                    <span id="entity-span"
+                      >embarazo de 33.9 sdg<span
+                        id="entity-tag"
+                        class="text-primary"
+                        >Edad &lt; 37 semanas</span
+                      ></span
+                    >
+                    que acude por &hellip;
+                  </li>
+                  <li class="mb-3">
+                    &hellip; abdomen blando a expensas de
+                    <span id="entity-span"
+                      >embarazo de 33.9 sdg<span
+                        id="entity-tag"
+                        class="text-primary"
+                        >Edad &lt; 37 semanas</span
+                      ></span
+                    >
+                    por FUM confiable &hellip;
+                  </li>
+                  <li class="mb-3">
+                    &hellip; de la tercera década de la vida con
+                    <span id="entity-span"
+                      >embarazo de 33.9 sdg<span
+                        id="entity-tag"
+                        class="text-primary"
+                        >Edad &lt; 37 semanas
+                      </span></span
+                    >
+                    sin trabajo de parto.
+                  </li>
+                </ul>
+              </div>
+              <h2 class="fs-4"><strong>G5.</strong> Revisión de guías</h2>
+              <p class="txt-justify mb-4">
+                Si se detectan tipos de menciones o casos especiales que podrían
+                ser de interés y las guías no especifican su anotación, se deben
+                reportar estos casos junto con ejemplos para refinar las reglas
+                de anotación.
+              </p>
+              <h2 class="fs-4"><strong>G6.</strong> Límite en oraciones</h2>
+              <p class="txt-justify">
+                Las anotaciones no pueden atravesar más de una oración. Esta
+                regla puede implicar que no se anote información relevante. No
+                obstante, su aplicación simplifica y acelera la anotación y
+                facilita el tratamiento computacional posterior. Así
+                <strong
+                  >una entidad clínica no puede etiquetarse (anotarse)</strong
+                >
+                si atraviesa:
+              </p>
+              <ul class="mb-4">
+                <li>Un punto y seguido</li>
+                <li>Un punto y aparte</li>
+                <li>Un punto de viñeta</li>
+              </ul>
+              <h2 class="fs-4">
+                <strong>G7.</strong> Solapamiento de entidades clínicas
+              </h2>
+              <p class="txt-justify mb-4">
+                <strong
+                  >No se permite el solapamiento para etiquetar entidades
+                  clínicas</strong
+                >. Esto se debe a que la plataforma para el etiquetado manual
+                <a class="liga" href="https://argilla.io/" target="_blank"
+                  >Argilla</a
+                >
+                no lo permite.
+              </p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="positivas-tab-pane"
+              role="tabpanel"
+              aria-labelledby="positivas-tab"
+              tabindex="0"
+            >
+              <p class="mb-4">
+                Descripción de las reglas que definen
+                <strong>que se debe de anotar</strong>.
+              </p>
+              <h2 class="fs-4"><strong>P1.</strong> Abreviaturas y siglas</h2>
+              <p class="txt-justify mb-4">
+                Una mención textual (entidad clínica) puede ser una abreviatura
+                o una sigla de la entidad morfológica. Únicamente se debe anotar
+                aquellas abreviaturas y siglas que pueden ser unidas a entidades
+                clínicas según el conocimiento del anotador y descripciones
+                directamente incluidas en el texto (abreviación ad-hoc) sin
+                ningún tipo de duda. Ejemplos:
+              </p>
+              <h2 class="fs-4"><strong>P2.</strong> Anotar negaciones</h2>
+              <p class="txt-justify mb-4">
+                Anotar menciones textuales (entidades clínicas), incluso si la
+                mención está en una expresión negada. Por ejemplo:
+              </p>
+              <h2 class="fs-4">
+                <strong>P3.</strong> Anotar con valores en cero
+              </h2>
+              <p class="txt-justify mb-4">
+                Cuando una mención textual menciona un valor de cero. Ejemplos:
+              </p>
+              <h2 class="fs-4"><strong>P4.</strong> Anotar sinónimos</h2>
+              <p class="txt-justify mb-4">
+                Deben anotarse todos los sinónimos o expresiones escritas en
+                diferentes formas que hacen referencia a alguna de las entidades
+                clínicas. Por ejemplo:
+              </p>
+              <h2 class="fs-4"><strong>P5.</strong> Antibióticos</h2>
+              <p class="txt-justify mb-4">
+                Deben anotarse todos los nombres de antibióticos identificados
+                en el documento. Los antibióticos son medicamentos que combaten
+                infecciones causadas por bacterias ya sea matando las bacterias
+                o dificultando su crecimiento y multiplicación. Ejemplos de
+                menciones textuales para ser etiquetadas.
+              </p>
+              <h2 class="fs-4"><strong>P6.</strong> Cesárea previa (NO)</h2>
+              <p class="txt-justify mb-4">
+                Cuando una paciente no tiene antecedentes de cirugías para la
+                resolución del embarazo. Ejemplos para etiquetar cuando no
+                existe una cesárea previa de la paciente.
+              </p>
+              <h2 class="fs-4"><strong>P7.</strong> Cesárea previa (SI)</h2>
+              <p class="txt-justify mb-4">
+                Una paciente que cuenta con antecedente quirúrgico (incisión
+                abdominal) para la resolución del embarazo. Las menciones
+                textuales deben estar explícitas en el texto de la nota clínica.
+                Ejemplos:
+              </p>
+              <h2 class="fs-4"><strong>P8.</strong> Complicación</h2>
+              <p class="txt-justify mb-4">
+                La complicación en el embarazo es todo evento que se desarrolla
+                durante la gestación y parto que puede comprometer la salud y
+                vida del feto y la madre. Anotar todas las menciones encontradas
+                de forma explícita en la nota clínica. Por ejemplo:
+              </p>
+              <h2 class="fs-4"><strong>P9.</strong> Dosis</h2>
+              <p class="txt-justify mb-4">
+                Una dosis es la cantidad de un medicamento que contiene la
+                medida exacta del principio activo para que este sea eficaz,
+                efectivo y seguro para el tratamiento de la paciente. Ejemplos:
+              </p>
+              <h2 class="fs-4"><strong>P10.</strong> Edad &lt; 37 semanas</h2>
+              <p class="txt-justify mb-4">
+                Edad gestacional es el período transcurrido desde el primer día
+                de la última menstruación de la mujer con ciclos menstruales
+                regulares, sin uso de anticonceptivos hormonales; con fecha de
+                última menstruación confiable, hasta el nacimiento o hasta el
+                evento gestacional en estudio. Cuando el embarazo se encuentra
+                dentro del período menor a las 37 semanas de gestación.
+                Ejemplos:
+              </p>
+              <h2 class="fs-4"><strong>P11.</strong> Edad &ge; 37 semanas</h2>
+              <p class="txt-justify mb-4">
+                Cuando el embarazo se encuentra dentro del período mayor o igual
+                a 37 semanas de gestación. Algunos ejemplos son:
+              </p>
+              <h2 class="fs-4"><strong>P12.</strong> Embarazo múltiple</h2>
+              <p class="txt-justify mb-4">
+                Un embarazo múltiple es el desarrollo simultáneo en el útero de
+                dos o más fetos.​ Etiquetar menciones de Embarazo múltiple
+                similares a los siguientes ejemplos:
+              </p>
+              <h2 class="fs-4"><strong>P13.</strong> Embarazo único</h2>
+              <p class="txt-justify mb-4">
+                Se denomina embarazo único al proceso de gestación surgido de la
+                fecundación del óvulo por un solo espermatozoide, dando lugar a
+                un único feto. Ejemplos de menciones textuales para etiquetar
+                Embarazo único:
+              </p>
+              <h2 class="fs-4"><strong>P14.</strong> Hemorragia obstétrica</h2>
+              <p class="txt-justify mb-4">
+                La hemorragia obstétrica se define como la pérdida de volúmen
+                sanguíneo mayor o igual a 500 ml. Algunos ejemplos de Hemorragia
+                obstétrica se describen como:
+              </p>
+              <h2 class="fs-4"><strong>P15.</strong> Info personal</h2>
+              <p class="txt-justify mb-4">
+                Menciones textuales que hacen referencia a información personal
+                (sensible) de la paciente, familiares y médicos descritas de
+                forma explícita en las notas clínicas. La información a
+                etiquetar debe contemplar los siguientes aspectos:
+              </p>
+              <h2 class="fs-4"><strong>P16.</strong> Parto multípara</h2>
+              <p class="txt-justify mb-4">
+                Parto es el conjunto de fenómenos activos y pasivos que permiten
+                la expulsión del feto de 22 semanas o más por vía vaginal. Se
+                considera parto multípara a toda paciente que cuenta con
+                antecedentes de resolución del embarazo por vía vaginal. Algunos
+                ejemplos de menciones textuales para Parto multípara son:
+              </p>
+              <h2 class="fs-4"><strong>P17.</strong> Parto nulípara</h2>
+              <p class="txt-justify mb-4">
+                Se considera parto nulípara a toda paciente que no cuenta con
+                antecedentes de resolución del embarazo por vía vaginal.
+                Ejemplos de menciones para Parto nulípara:
+              </p>
+              <h2 class="fs-4"><strong>P18.</strong> Presentación cefálica</h2>
+              <p class="txt-justify mb-4">
+                Presentación cefálica es cuando la cabeza del feto se pone en
+                contacto con el estrecho superior de la pelvis materna.
+              </p>
+              <h2 class="fs-4"><strong>P19.</strong> Presentación podálica</h2>
+              <p class="txt-justify mb-4">
+                La presentación podálica es aquella en la que la pelvis de un
+                feto en situación longitudinal está en contacto con el estrecho
+                superior de la pelvis de su madre. También se le conoce como
+                presentación de nalgas o pelviana. Ejemplos de Posición
+                podálica:
+              </p>
+              <h2 class="fs-4"><strong>P20.</strong> Posología</h2>
+              <p class="txt-justify mb-4">
+                Determinación de la cantidad de medicamento y del intervalo de
+                tiempo entre administraciones sucesivas de un tratamiento.
+              </p>
+              <h2 class="fs-4"><strong>P21.</strong> Situación transversa</h2>
+              <p class="txt-justify mb-4">
+                Cuando el feto se encuentra de lado, es decir; formando un
+                ángulo de 90 grados con respecto a la columna vertebral de la
+                madre. Algunos ejemplos para Situación transversa son:
+              </p>
+              <h2 class="fs-4"><strong>P22.</strong> TDP espontáneo</h2>
+              <p class="txt-justify mb-4">
+                El Trabajo de Parto (TDP) espontáneo es el que se produce por
+                vía vaginal cuando las contracciones del útero modifican el
+                cuello uterino y producen el descenso de la cabeza del producto.
+              </p>
+              <h2 class="fs-4"><strong>P23.</strong> TDP inducido</h2>
+              <p class="txt-justify mb-4">
+                El Trabajo de Parto (TDP) inducido es aquel donde se recurre a
+                la estimulación mediante fármacos y/o medios físicos aplicados,
+                para que el útero se contraiga antes de que el trabajo de parto
+                comience por sí solo para lograr un parto vaginal.
+              </p>
+              <h2 class="fs-4">
+                <strong>P24.</strong> TDP No: cesárea programada
+              </h2>
+              <p class="txt-justify mb-4">
+                No hay trabajo de parto (TDP): cesárea programada, es la que se
+                decide realizar antes de que comience el trabajo de parto debido
+                a la existencia de circunstancias que ponen en riesgo a la madre
+                y/o al feto si el parto se realiza por vía vaginal. Puede
+                realizarse por decisión del personal médico o de la paciente.
+              </p>
+              <h2 class="fs-4">
+                <strong>P25.</strong> Tipo de resolución: cesárea
+              </h2>
+              <p class="txt-justify mb-4">
+                Tipo de resolución: cesárea, hace referencia a la resolucíon del
+                parto por vía de cesárea. Cesárea, es la intervención quirúrgica
+                que tiene por objeto extraer el feto vivo o muerto, de 22
+                semanas cumplidas o más, así como la placenta y sus anexos, a
+                través de una incisión en la pared abdominal y uterina.
+              </p>
+              <h2 class="fs-4">
+                <strong>P26.</strong> Tipo de resolución: parto
+              </h2>
+              <p class="txt-justify mb-4">
+                Tipo de resolución: parto, se refiere a la resolucíon del parto
+                por vía vaginal. El parto vaginal es el proceso natural de dar a
+                luz, en el que el producto pasa a través del canal vaginal.
+              </p>
+              <h2 class="fs-4"><strong>P27.</strong> Uterotónico</h2>
+              <p class="txt-justify mb-4">
+                Un uterotónico, también conocido como oxitócico o ecbólico, es
+                un tipo de medicamento que se usa para inducir la contracción o
+                mayor tonicidad del útero.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="negativas-pane"
+              role="tabpanel"
+              aria-labelledby="negativas"
+              tabindex="0"
+            >
+              <p class="mb-4">
+                Descripción de las reglas que definen
+                <strong
+                  >que <sapn class="text-danger">no</sapn> se debe de
+                  anotar</strong
+                >.
+              </p>
+              <h2 class="fs-4">
+                <strong>N1.</strong> Menciones implícitas de entidades clínicas
+              </h2>
+              <p class="txt-justify mb-4">
+                NO se debe realizar ningún tipo de inferencia clínica para
+                decidir si una evidencia textual representa indirectamente una
+                entidad clínica. Asimismo, las anáforas NO deben anotarse.
+                Ejemplos:
+              </p>
+              <h2 class="fs-4">
+                <strong>N2.</strong> Entidades de una palabra y excepciones
+              </h2>
+              <p class="txt-justify">
+                NO etiquetar aquellas entidades compuestas de una palabra o una
+                abreviación si no está acompañada de más palabras que definan o
+                especifiquen dicha entidad.
+              </p>
+              <p class="txt-justify mb-4">
+                Ejemplos de entidades que se componen de una única palabra:
+              </p>
+              <p class="txt-justify mb-4">
+                Existen excepciones a está regla como los siguientes ejemplos:
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="ortograficas-tab-pane"
+              role="tabpanel"
+              aria-labelledby="ortograficas-tab"
+              tabindex="0"
+            >
+              <p class="mb-4">
+                Descripción sobre las reglas ortográficas a tomar en
+                consideración.
+              </p>
+              <h2 class="fs-4"><strong>O1.</strong> Otros idiomas</h2>
+              <p class="txt-justify mb-4">
+                Las entidades clínicas (menciones o expresiones textuales) en
+                otros idiomas diferentes del español deben ser anotados.
+              </p>
+              <h2 class="fs-4">
+                <strong>O2.</strong> Errores tipográficos y de conversión
+              </h2>
+              <p class="txt-justify mb-4">
+                Aquellas menciones textuales (que sigan las reglas generales de
+                anotación) y que tengan errores tipográficos, deben ser
+                anotadas. Esto incluye a las menciones que sufran de errores de
+                conversión automática, generadas al realizar la conversión de
+                los textos de forma automática mediante algún programa.
+              </p>
+              <h2 class="fs-4"><strong>O3.</strong> Errores ortográficos</h2>
+              <p class="txt-justify mb-4">
+                Las menciones que incluyan algún tipo de error ortográfico (por
+                ejemplo: letras de más o de menos, espacios incorrectos) también
+                deben anotarse. Ejemplo:
+              </p>
+              <h2 class="fs-4"><strong>O4.</strong> Entidades completas</h2>
+              <p class="txt-justify mb-4">
+                Las entidades anotadas deben estar compuestas por todas las
+                palabras tal y como están incluídas en el texto (palabras
+                completas, abreviaturas, siglas). No se pueden anotar palabras a
+                medias. Ejemplo:
+              </p>
+              <h2 class="fs-4"><strong>O5.</strong> Determinantes</h2>
+              <p class="txt-justify mb-4">
+                No se deben incluir dentro de una mención los determinantes que
+                aparecen al principio (por ejemplo: el, la, este, ese).
+              </p>
+              <h2 class="fs-4"><strong>O6.</strong> Preposiciones</h2>
+              <p class="txt-justify mb-4">
+                En la anotación de una mención, no se debe anotar las
+                preposiciones que aparecen al principio (por ejemplo: con,
+                contra, de, desde). Ejemplos:
+              </p>
+              <h2 class="fs-4"><strong>O7.</strong> Puntuación</h2>
+              <p class="txt-justify mb-4">
+                No se deben incluir dentro de una mención los signos de
+                puntuación que aparecen al final (comas, puntos, etc.).
+              </p>
+              <h2 class="fs-4"><strong>O8.</strong> Paréntesis y comillas</h2>
+              <p class="txt-justify mb-4">
+                En las menciones que aparezcan entre paréntesis o comillas,
+                dejaremos fuera estos signos. Como excepción, si dentro de la
+                mención aparece un paréntesis o unas comillas de apertura
+                intentaremos incluir también el signo de cierre.
+              </p>
+              <h2 class="fs-4">
+                <strong>O9.</strong> Entidades sin delimitación
+              </h2>
+              <p class="txt-justify mb-4">
+                Debe evitarse anotar aquellas entidades que no tengan forma de
+                etiquetarse para ser diferenciadas de palabras o símbolos que la
+                preceden y anteceden. Esto es una deficiencia tanto de los
+                datos, como de la herramienta de etiquetado que no permite
+                seleccionar este tipo de menciones textuales. Ejemplo:
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="container mt-auto">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="https://github.com/PLN-disca-iimas"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <img src="img/late_lab.png" alt="late_lab" height="64" />
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2024 Late Lab, IIMAS-UNAM</span
+          >
+        </div>
+
+        <div class="col-md-4 d-flex justify-content-end">
+          <a
+            href="https://www.iimas.unam.mx/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <img src="img/unam_iimas.png" alt="unam_iimas" height="64" />
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
